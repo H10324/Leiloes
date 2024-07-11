@@ -77,7 +77,13 @@ public class ProdutosDAO {
     }
     
     public ArrayList<ProdutosDTO> getProdutosVendidos() throws SQLException {
-       return listagem;
+       ArrayList<ProdutosDTO> listagem = listarProdutos();
+        
+        
+        System.out.println(listagem);
+        return (ArrayList<ProdutosDTO>) listagem.stream()
+                .filter(produto -> "Vendido".equals(produto.getStatus()))
+                .collect(Collectors.toList());
     }
     
     

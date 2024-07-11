@@ -135,7 +135,28 @@ public class test extends javax.swing.JFrame {
     }
     
     private void listarProdutosVendidos(){
-        
+        try {
+            ProdutosDAO produtosdao = new ProdutosDAO();
+            
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setNumRows(0);
+            
+                       
+            ArrayList<ProdutosDTO> vendidos = produtosdao.getProdutosVendidos();
+            
+            System.out.println(vendidos);
+            
+            for (ProdutosDTO produto : vendidos) {
+            model.addRow(new Object[]{
+                produto.getId(),
+                produto.getNome(),
+                produto.getValor(),
+                produto.getStatus()
+            });
+            }
+            System.out.println("teste");
+        } catch (Exception e) {
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
