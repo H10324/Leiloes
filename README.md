@@ -6,4 +6,3 @@ Este projeto consiste em um sistema de listagem de estoque, listagem de vendas e
 ## Tecnologias Utilizadas
 - Java
 - MySQL
-
