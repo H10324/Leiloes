@@ -153,6 +153,8 @@ public class listagemVIEW extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVenderActionPerformed
 
     private void btnVendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVendasActionPerformed
+         test vendas = new test(); 
+        vendas.setVisible(true);
         
         System.out.println("test");
     }//GEN-LAST:event_btnVendasActionPerformed
