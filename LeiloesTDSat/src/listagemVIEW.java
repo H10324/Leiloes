@@ -140,7 +140,6 @@ public class listagemVIEW extends javax.swing.JFrame {
 
     private void btnVenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVenderActionPerformed
         
-        
         listarProdutos();
     }//GEN-LAST:event_btnVenderActionPerformed
 
